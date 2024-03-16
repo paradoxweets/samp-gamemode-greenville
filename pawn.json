@@ -1,0 +1,78 @@
+{
+	"user": "paradoxweets",
+	"repo": "samp-gamemode-greenville",
+	"entry": "gamemodes/main.pwn",
+	"output": "gamemodes/main.amx",
+	"dependencies": [
+		"pawn-lang/samp-stdlib",
+		"pawn-lang/YSI-Includes@5.x",
+		"samp-incognito/samp-streamer-plugin",
+		"Y-Less/sscanf:v2.13.8",
+		"katursis/Pawn.Regex:1.2.3"
+	],
+	"local": true,
+	"runtime": {
+		"version": "0.3.7",
+		"mode": "server",
+		"rcon_password": "1312",
+		"port": 433,
+		"hostname": "Greenville",
+		"maxplayers": 1000,
+		"language": "English",
+		"mapname": "San Andreas",
+		"weburl": "www.sa-mp.com",
+		"gamemodetext": "v0.1",
+		"announce": true,
+		"lanmode": false,
+		"query": true,
+		"rcon": false,
+		"logqueries": false,
+		"sleep": 5,
+		"maxnpc": 0,
+		"stream_rate": 1000,
+		"stream_distance": 200,
+		"onfoot_rate": 30,
+		"incar_rate": 30,
+		"weapon_rate": 30,
+		"chatlogging": true,
+		"timestamp": true,
+		"messageholelimit": 3000,
+		"messageslimit": 500,
+		"ackslimit": 3000,
+		"playertimeout": 10000,
+		"minconnectiontime": 0,
+		"lagcompmode": 1,
+		"connseedtime": 300000,
+		"db_logging": false,
+		"db_log_queries": false,
+		"conncookies": true,
+		"cookielogging": false,
+		"output": true,
+		"extra": {
+			"gamemode0": "main 1"
+		}
+	},
+	"builds": [
+		{
+			"name": "dev",
+			"version": "3.10.10",
+			"args": [
+				"-d3",
+				"-Dgamemodes",
+				"-Z+",
+				"-;+",
+				"-(+"
+			],
+			"includes": [
+				"src/",
+				"src/handlers/",
+				"src/scripts/",
+				"src/data/",
+				"gamemodes/modules/",
+				"content/",
+				"legacy"
+			],
+			"compiler": {}
+		}
+	]
+}
