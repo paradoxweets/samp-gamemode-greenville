@@ -1,11 +1,17 @@
 #include <config>
 
-/** Handlers */
-#include <handlers\proxy>
-
 /**  Events */
 #include <events\ChatMessage>
 #include <events\UnkownCommand>
+
+/** Handlers */
+#include <handlers\proxy>
+
+/** Functions */
+#include <functions\global_func>
+
+/**  Scripts */
+#include <scripts\GetVehicleName>
 
 /**  Data */
 #include <player\account_data>
@@ -15,3 +21,4 @@
 #include <mapping\spawn>
 
 /** Property  */
+#include <rent\global>

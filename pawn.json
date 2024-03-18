@@ -68,6 +68,7 @@
 				"src/handlers/",
 				"src/scripts/",
 				"src/data/",
+				"src/property",
 				"gamemodes/modules/",
 				"content/",
 				"legacy"
